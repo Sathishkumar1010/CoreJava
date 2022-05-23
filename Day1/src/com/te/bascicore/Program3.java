@@ -7,8 +7,8 @@ public class Program3 {
 		Scanner scn=new Scanner(System.in);
 		System.out.println("Enter the Number");
 		int num=scn.nextInt();
-		int a=ReverseNumber.reverseNum(num);
-		System.out.println("Reverse of "+num+" is :"+a);
+		String a=ReverseNumber.reverseNum(num);
+		System.out.println("Reverse of Number is :"+a);
 	}
 
 }
