@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+ <bean id="passobj" class="com.te.day11assgn2.Passport" >
+    <property name="passport_num" value="101"/>
+	<property name="date_of_issue" value="10-10-1995"/>
+	<property name="date_of_expiry" value="10-10-2005"/>
+	
+    
+    </bean>
+    
+   <bean id="employee" class="com.te.day11assgn2.Employee" autowire="byName">
+     <property name="empid" value="123456"/>
+	<property name="emp_name" value="Sathishkumar"/>
+	</bean>
+    
+ 
+</beans>
